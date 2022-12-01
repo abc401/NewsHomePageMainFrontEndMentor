@@ -1,0 +1,17 @@
+:root {
+    --clr-neutral-100: hsl(36, 100%, 99%);
+    --clr-neutral-200: hsl(233, 8%, 79%);
+    --clr-neutral-600: hsl(236, 13%, 42%);
+    --clr-neutral-900: hsl(240, 100%, 5%);
+
+    --clr-accent-1: hsl(35, 77%, 62%);
+    --clr-accent-2: hsl(5, 85%, 63%);
+}
+
+@media only screen and (max-width: 375px) {
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+}
