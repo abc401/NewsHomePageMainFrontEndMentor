@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- displays site properly based on user's device -->
 
         <link
             rel="icon"
@@ -26,16 +25,106 @@
         <title>Frontend Mentor | News homepage</title>
     </head>
     <body>
-        Home New Popular Trending Categories The Bright Future of Web 3.0? We
-        dive into the next evolution of the web that claims to put the power of
-        the platforms back into the hands of the people. But is it really
-        fulfilling its promise? Read more New Hydrogen VS Electric Cars Will
-        hydrogen-fueled cars ever catch up to EVs? The Downsides of AI Artistry
-        What are the possible adverse effects of on-demand AI image generation?
-        Is VC Funding Drying Up? Private funding by VC firms is down 50% YOY. We
-        take a look at what that means. 01 Reviving Retro PCs What happens when
-        old PCs are given modern upgrades? 02 Top 10 Laptops of 2022 Our best
-        picks for various needs and budgets. 03 The Growth of Gaming How the
-        pandemic has sparked fresh opportunities.
+        <nav>
+            <div class="logo">
+                <img src="./assets/images/logo.svg" alt="Website Logo" />
+            </div>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Categories</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>The Bright Future of Web 3.0?</h1>
+            <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+            </p>
+            <form action="#" method="post">
+                <button>Read more</button>
+            </form>
+        </header>
+        <div class="sidebar">
+            <h2>New</h2>
+            <ul>
+                <li class="sidebar-link">
+                    <h3 class="sidebar-link__heading">
+                        Hydrogen VS Electric Cars
+                    </h3>
+                    <p class="sidebar-link__description">
+                        Will hydrogen-fueled cars ever catch up to EVs?
+                    </p>
+                </li>
+                <li class="sidebar-link">
+                    <h3 class="sidebar-link__heading">
+                        The Downsides of AI Artistry
+                    </h3>
+                    <p class="sidebar-link__description">
+                        What are the possible adverse effects of on-demand AI
+                        image generation?
+                    </p>
+                </li>
+                <li class="sidebar-link">
+                    <h3 class="sidebar-link__heading">
+                        Is VC Funding Drying Up?
+                    </h3>
+                    <p class="sidebar-link__description">
+                        Private funding by VC firms is down 50% YOY. We take a
+                        look at what that means.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom">
+            <div class="bottom-card">
+                <div class="bottom-card__image">
+                    <img
+                        src="./assets/images/image-retro-pcs.jpg"
+                        alt="Image of a Retro PCs"
+                    />
+                </div>
+                <div class="bottom-card__body">
+                    <div class="bottom-card__index">01</div>
+                    <h2 class="bottom-card__heading">Reviving Retro PCs</h2>
+                    <p class="bottom-card__description">
+                        What happens when old PCs are given modern upgrades?
+                    </p>
+                </div>
+            </div>
+            <div class="bottom-card">
+                <div class="bottom-card__image">
+                    <img
+                        src="./assets/images/image-top-laptops.jpg"
+                        alt="Image of a Laptop Keyboard"
+                    />
+                </div>
+                <div class="bottom-card__body">
+                    <div class="bottom-card__index">02</div>
+                    <h2 class="bottom-card__heading">Top 10 Laptops of 2022</h2>
+                    <p class="bottom-card__description">
+                        Our best picks for various needs and budgets.
+                    </p>
+                </div>
+            </div>
+            <div class="bottom-card">
+                <div class="bottom-card__image">
+                    <img
+                        src="./assets/images/image-gaming-growth.jpg"
+                        alt="Image of a Laptop Keyboard"
+                    />
+                </div>
+                <div class="bottom-card__body">
+                    <div class="bottom-card__index">03</div>
+                    <h2 class="bottom-card__heading">The Growth of Gaming</h2>
+                    <p class="bottom-card__description">
+                        How the pandemic has sparked fresh opportunities.
+                    </p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
