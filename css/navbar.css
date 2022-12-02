@@ -3,6 +3,7 @@ nav {
     grid-auto-flow: column;
     align-items: center;
     grid-template-areas: 'logo spacer navlist';
+    grid-template-columns: max-content auto max-content;
 }
 
 .logo {
@@ -13,8 +14,8 @@ nav {
     grid-area: navlist;
 }
 
-input:checked ~ ul {
-    /* top: 100px; */
+.nav-list ul {
+
     display: none;
 }
 
@@ -22,22 +23,37 @@ input:checked ~ ul {
     display: none;
 }
 
+.menu-icon {
+    position: relative;
+    z-index: 100;
+}
+
+
 @media only screen and (max-width: 375px) {
+    
     .menu-icon-close {
         display: none;
     }
     
-    #nav-ul-checkbox:checked + label .menu-icon-normal {
+    :checked + label .menu-icon-normal {
         display: none;
     }
     
-    #nav-ul-checkbox:checked + label .menu-icon-close {
+    :checked + label .menu-icon-close {
         display: inline;
     }
 
-    .nav-list ul {
-        top: 100px;
-        position: absolute;
+    input:checked ~ ul {
+        background-color: aqua;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 30%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
