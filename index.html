@@ -20,7 +20,7 @@
         />
 
         <!-- Custom Style Links -->
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/all.css" />
 
         <title>Frontend Mentor | News homepage</title>
     </head>
@@ -29,15 +29,45 @@
             <div class="logo">
                 <img src="./assets/images/logo.svg" alt="Website Logo" />
             </div>
-            <ul class="nav-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Popular</a></li>
-                <li><a href="#">Trending</a></li>
-                <li><a href="#">Categories</a></li>
-            </ul>
+            <div class="nav-list">
+                <input type="checkbox" id="nav-ul-checkbox" />
+
+                <label for="nav-ul-checkbox" class="menu-icon">
+                    <img
+                        src="./assets/images/icon-menu.svg"
+                        class="menu-icon-normal"
+                    />
+                    <img
+                        src="./assets/images/icon-menu-close.svg"
+                        class="menu-icon-close"
+                    />
+                </label>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Categories</a></li>
+                </ul>
+            </div>
         </nav>
         <header>
+            <div class="header-image">
+                <picture>
+                    <source
+                        media="(max-width: 375px)"
+                        srcset="./assets/images/image-web-3-mobile.jpg"
+                    />
+                    <source
+                        media="(min-width: 1440)"
+                        srcset="./assets/images/image-web-3-desktop.jpg"
+                    />
+                    <img
+                        src="./assets/images/image-web-3-desktop.jpg"
+                        alt="Image of Web 3"
+                    />
+                </picture>
+            </div>
             <h1>The Bright Future of Web 3.0?</h1>
             <p>
                 We dive into the next evolution of the web that claims to put

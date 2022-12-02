@@ -1,0 +1,48 @@
+nav {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-template-areas: 'logo spacer navlist';
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.nav-list {
+    grid-area: navlist;
+}
+
+input:checked ~ ul {
+    /* top: 100px; */
+    display: none;
+}
+
+#nav-ul-checkbox {
+    display: none;
+}
+
+@media only screen and (max-width: 375px) {
+    .menu-icon-close {
+        display: none;
+    }
+    
+    #nav-ul-checkbox:checked + label .menu-icon-normal {
+        display: none;
+    }
+    
+    #nav-ul-checkbox:checked + label .menu-icon-close {
+        display: inline;
+    }
+
+    .nav-list ul {
+        top: 100px;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .menu-icon {
+        display: none;
+    }
+}

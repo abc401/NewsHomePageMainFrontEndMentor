@@ -1,3 +1,5 @@
+@import url(./navbar.css);
+
 :root {
     --clr-neutral-100: hsl(36, 100%, 99%);
     --clr-neutral-200: hsl(233, 8%, 79%);
@@ -8,10 +10,23 @@
     --clr-accent-2: hsl(5, 85%, 63%);
 }
 
-@media only screen and (max-width: 375px) {
-
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media only screen and (min-width: 1440px) {
-
+ul, ol {
+    list-style: none;
 }
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
