@@ -14,14 +14,12 @@ nav {
     grid-area: navlist;
 }
 
-.nav-list ul {
-    display: none;
-}
+
 
 
 
 .nav-list a {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 #nav-ul-checkbox {
@@ -48,7 +46,11 @@ nav {
         display: inline;
     }
 
-    input:checked ~ ul {
+    .nav-list ul {
+        display: none;
+    }
+
+    .nav-list input:checked ~ ul {
         background-color: var(--clr-neutral-100);
         position: fixed;
         top: 0;
@@ -80,5 +82,19 @@ nav {
 @media only screen and (min-width: 375px) {
     .menu-icon {
         display: none;
+    }
+
+    .nav-list ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 2.5em;
+    }
+
+    .nav-list li {
+        color: var(--clr-neutral-600);
+    }
+
+    .nav-list li:hover {
+        color: var(--clr-accent-2);
     }
 }
