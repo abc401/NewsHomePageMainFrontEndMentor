@@ -38,7 +38,7 @@ body {
     font-family: "Inter", sans-serif;
     background-color: var(--clr-neutral-100);
     display: grid;
-    align-items: center;
+    margin-block: auto;
     padding-block: var(--body-spacing);
     gap: var(--body-spacing);
     min-height: 100vh;
@@ -74,7 +74,7 @@ nav img {
     max-height: 100%;
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 850px) {
     body {
         padding-inline: var(--body-padding-inline-mobile);
         grid-template-areas:
@@ -85,7 +85,7 @@ nav img {
     }
 }
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 851px) {
     body {
         padding-inline: var(--body-padding-inline-desktop);
         

@@ -1,0 +1,31 @@
+.sidebar {
+    background-color: var(--clr-neutral-900);
+    padding-inline: 1.6em;
+    padding-block: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.sidebar h2 {
+    color: var(--clr-accent-1);
+    font-size: 2.5rem;
+}
+
+.sidebar-link {
+    padding-block: 1.9em;
+}
+
+.sidebar-link + .sidebar-link {
+    border-top: 1px var(--clr-neutral-600) solid;
+}
+
+.sidebar-link__heading {
+    color: var(--clr-neutral-100);
+    font-size: 1.3rem;
+}
+
+.sidebar-link__description {
+    color: var(--clr-neutral-200);
+    margin-block: 0.58em;
+}
