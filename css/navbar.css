@@ -85,6 +85,6 @@ nav {
     .nav-list ul {
         display: flex;
         justify-content: space-between;
-        gap: 2.5em;
+        gap: 2.45em;
     }
 }
