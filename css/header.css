@@ -39,6 +39,39 @@ header button:hover {
     background-color: var(--clr-neutral-900);
 }
 
+header {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+header .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+header .wrapper>* {
+    flex: 1;
+}
+
+header button {
+    font-family: inherit;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding-block: 1.1em;
+    padding-inline: 2.25em;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.33em;
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-accent-2);
+    border: none;
+}
+
+header button:hover {
+    background-color: var(--clr-neutral-900);
+}
+
 header p {
     /* margin-block: 1.5em; */
     min-width: 20ch;
