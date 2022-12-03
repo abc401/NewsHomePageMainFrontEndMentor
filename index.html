@@ -8,7 +8,7 @@
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="./images/favicon-32x32.png"
+            href="./assets/images/favicon-32x32.png"
         />
 
         <!-- Google Font Links -->
@@ -21,7 +21,8 @@
 
         <!-- Custom Style Links -->
         <link rel="stylesheet" href="./css/all.css" />
-        <link rel="stylesheet" href="./css/navbar.css">
+        <link rel="stylesheet" href="./css/navbar.css" />
+        <link rel="stylesheet" href="./css/header.css" />
 
         <title>Frontend Mentor | News homepage</title>
     </head>
@@ -70,16 +71,18 @@
                 </picture>
             </div>
             <h1>The Bright Future of Web 3.0?</h1>
-            <p>
-                We dive into the next evolution of the web that claims to put
-                the power of the platforms back into the hands of the people.
-                But is it really fulfilling its promise?
-            </p>
-            <form action="#" method="post">
-                <button>Read more</button>
-            </form>
+            <div class="wrapper">
+                <p>
+                    We dive into the next evolution of the web that claims to
+                    put the power of the platforms back into the hands of the
+                    people. But is it really fulfilling its promise?
+                </p>
+                <form action="#" method="post">
+                    <button>Read more</button>
+                </form>
+            </div>
         </header>
-        <div class="sidebar">
+        <section class="sidebar">
             <h2>New</h2>
             <ul>
                 <li class="sidebar-link">
@@ -109,8 +112,8 @@
                     </p>
                 </li>
             </ul>
-        </div>
-        <div class="bottom">
+        </section>
+        <section class="bottom">
             <div class="bottom-card">
                 <div class="bottom-card__image">
                     <img
@@ -156,6 +159,6 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
     </body>
 </html>
