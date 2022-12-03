@@ -6,9 +6,7 @@ h1 {
 
 header {
     display: grid;
-    align-content: start;
-    justify-content: start;
-    /* justify-items: ; */
+    place-content: start;
     gap: 1em;
     grid-template-rows: repeat(2, auto);
 }
