@@ -16,11 +16,11 @@ nav {
     grid-area: navlist;
 }
 
-.nav-list li {
+.nav-list a {
     color: var(--clr-neutral-600);
 }
 
-.nav-list li:hover {
+.nav-list a:hover {
     color: var(--clr-accent-2);
 }
 
@@ -29,11 +29,12 @@ nav {
 }
 
 .menu-icon {
+    cursor: pointer;
     position: relative;
     z-index: 100;
 }
 
-@media only screen and (max-width: 514px) {
+@media only screen and (max-width: 420px) {
     .menu-icon-close {
         display: none;
     }
@@ -79,7 +80,7 @@ nav {
     }
 }
 
-@media only screen and (min-width: 515px) {
+@media only screen and (min-width: 421px) {
     .menu-icon {
         display: none;
     }

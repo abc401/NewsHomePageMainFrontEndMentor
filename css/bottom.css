@@ -1,0 +1,44 @@
+.bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+}
+
+.bottom-card {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 1.5em;
+}
+
+.bottom-card__index {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--clr-neutral-200);
+}
+
+.bottom-card__image {
+    display: grid;
+    place-items: center;
+}
+
+.bottom-card__image img {
+    max-width: 100px;
+}
+
+.bottom-card__body {
+    min-width: 15ch;
+    max-width: 23ch;
+}
+
+.bottom-card__description {
+    font-size: 0.9;
+}
+
+.bottom-card__heading {
+    font-size: 1.2rem;
+    /* width: max-content; */
+}
+
+.bottom-card__heading:hover {
+    color: var(--clr-accent-2);
+}
